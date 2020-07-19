@@ -66,7 +66,9 @@ JesusChrist hasProperty TrueGod
 property Ousia
 Father hasProperty Ousia
 JesusChrist hasProperty Ousia
-`
+`,
+	"Empty":
+``,
 };
 
 var sel = document.getElementById('models');
