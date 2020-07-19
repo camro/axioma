@@ -42,8 +42,9 @@ label {
   display: block;
 }
 
-.error {
+.errorLabel {
   color: red;
+  height: 50px;
 }
 
 /* Red wavy underline, from https://stackoverflow.com/questions/28152175/a-wavy-underline-in-css */
