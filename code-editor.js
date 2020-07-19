@@ -2,8 +2,7 @@ function tokensToRegex(tokens) {
 	return new RegExp("(?:" + tokens.join("|") + ")");
 }
 
-allKeywords = [	"object", "property", "alias", "relationType", "hasProperty", "hasAlias",
-				"God", "Father", "Son", "HolySpirit"];
+allKeywords = [	"object", "property", "alias", "relationType", "hasProperty", "hasAlias"];
 
 CodeMirror.defineSimpleMode("axioma", {
 	start: [
