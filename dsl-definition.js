@@ -80,7 +80,7 @@ relation = optionalWhitespace label1:label whitespaceSameLine relationName:label
 	return {"type":"relation", "name":relationName, "subject":label1, "other":label2};
 }
 
-comment = optionalWhitespace "#" comment:([^\\n]*) { return {"type":"comment", "value":comment.join("") }; }
+comment = optionalWhitespace "#" comment:([^\\n]*) optionalWhitespace { return {"type":"comment", "value":comment.join("") }; }
 
 keyword = "object"/"property"/"alias"/"set"
 relationKeywords = "hasMember"/"hasProperty"/"hasAlias"/"hasComponent"
