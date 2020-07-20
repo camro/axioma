@@ -87,7 +87,8 @@ relationKeywords = "hasMember"/"hasProperty"/"hasAlias"/"hasComponent"
 
 label = word { return text(); }
 
-word = letter+
+word = letterOrUnderscore+
+letterOrUnderscore = letter/"_"
 letter = [a-zA-Z0-9]
 
 listSep = "," optionalWhitespace
